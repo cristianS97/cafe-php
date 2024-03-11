@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "AbrilFatface-Regular"; }
+body {
+  font-family: "AbrilFatface-Regular", monospace; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+header {
+  width: 100%;
+  background: url("../IMAGENES/bg.jpg") #281a0c;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0; }
+  header .contenedor {
+    position: relative;
+    height: 500px; }
+  header .menu {
+    width: 100%;
+    text-align: right; }
+    header .menu a {
+      color: #fff;
+      font-size: 20px;
+      display: inline-block;
+      margin: 40px 20px;
+      text-decoration: none;
+      position: relative; }
+      header .menu a:hover {
+        text-decoration: underline; }
+  header .textos {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px; }
+    header .textos .nombre {
+      font-size: 70px; }
+      header .textos .nombre span {
+        font-size: 50px; }
+    header .textos h3 {
+      font-size: 18px;
+      font-style: italic; }
+
+.main {
+  background: url("../IMAGENES/bg-textura.png");
+  background-repeat: repeat; }
+  .main .acercaDe .contenedor {
+    overflow: visible;
+    position: relative; }
+    .main .acercaDe .contenedor .foto {
+      width: 80%;
+      position: absolute;
+      left: 0;
+      top: -50px;
+      z-index: 0;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35); }
+      .main .acercaDe .contenedor .foto img {
+        vertical-align: top;
+        width: 100%; }
+  .main .acercaDe article {
+    background: #fff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 160px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+    float: right; }
+    .main .acercaDe article h3 {
+      font-size: 42px;
+      margin-bottom: 30px; }
+    .main .acercaDe article p {
+      line-height: 28px;
+      margin-bottom: 15px; }
+
+.main .menu {
+  padding-top: 600px;
+  margin-bottom: 50px; }
+  .main .menu .titulo {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px; }
+  .main .menu .contenedorMenu {
+    border: 1px solid #000;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden; }
+    .main .menu .contenedorMenu .contenedorMenu2 {
+      border: 1px solid #000;
+      background: transparent;
+      padding: 10px;
+      overflow: hidden; }
+  .main .menu article {
+    width: 50%;
+    float: left;
+    padding: 20px; }
+  .main .menu .categoria {
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold; }
+  .main .menu .platillo {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px dotted #000;
+    overflow: hidden; }
+  .main .menu .nombre {
+    font-size: 19px;
+    margin-bottom: 15px;
+    float: left; }
+  .main .menu .precio {
+    font-size: 19px;
+    margin-bottom: 15px;
+    float: right; }
+  .main .menu .descripcion {
+    font-size: 16px;
+    color: #676767;
+    clear: both; }
+
+.main .galeria {
+  overflow: hidden; }
+  .main .galeria .foto {
+    width: 25%;
+    float: left; }
+    .main .galeria .foto img {
+      width: 100%;
+      vertical-align: top;
+      opacity: 0.7; }
+    .main .galeria .foto:hover img {
+      opacity: 1;
+      transition: all 1s ease; }
+
+.main .ubicacion {
+  background: #fff;
+  padding: 60px 0px;
+  overflow: hidden; }
+  .main .ubicacion .titulo {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px; }
+  .main .ubicacion .direccion {
+    float: left;
+    width: 50%;
+    text-align: left; }
+    .main .ubicacion .direccion .calle {
+      margin-bottom: 15px; }
+  .main .ubicacion .horarios {
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden; }
+    .main .ubicacion .horarios h4 {
+      text-align: center;
+      margin-bottom: 20px; }
+    .main .ubicacion .horarios .entreSemana {
+      width: 50%;
+      float: left;
+      text-align: center; }
+    .main .ubicacion .horarios .finSemana {
+      width: 50%;
+      float: left;
+      text-align: center; }
+
+.main .mapa {
+  width: 100%;
+  overflow: hidden; }
+  .main .mapa iframe {
+    width: 100%;
+    max-height: 600px; }
+
+footer {
+  background: #000; }
+  footer .copyright {
+    text-align: center;
+    padding: 15px 0px;
+    color: #fff; }
+
+/*# sourceMappingURL=estilo.css.map */
