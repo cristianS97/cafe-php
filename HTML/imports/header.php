@@ -1,3 +1,12 @@
+<?php
+    $resultado = $mysqli->query("select * from contenido");
+
+    while($fila = $resultado->fetch_assoc()) {
+        $titulo = $fila["titulo"];
+        $contenido = $fila["bajada"];
+        $acerca = $fila["acerca"];
+    }
+?>
 <header>
     <div class="contenedor">
         <nav class="menu">
@@ -8,8 +17,8 @@
         </nav>
 
         <div class="textos">
-            <h1 class="nombre">Café <span>Kanela</span></h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+            <h1 class="nombre"><?= $titulo; ?></h1>
+            <h3><?= $contenido; ?></h3>
         </div>
     </div>
 </header>

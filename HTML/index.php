@@ -1,3 +1,4 @@
+<?php $mysqli = new mysqli("localhost", "root", "mysql", "cafephp"); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,3 +21,4 @@
 <script src="../JAVASCRIPT/funciones.js"></script>
 <script src="../JAVASCRIPT/parallax.js"></script>
 </html>
+<?php $mysqli->close(); ?>

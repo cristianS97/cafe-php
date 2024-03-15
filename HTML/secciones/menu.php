@@ -3,7 +3,13 @@
         <h3 class="titulo" id="platillos">Menú</h3>
         <div class="contenedorMenu">
             <div class="contenedorMenu2">
-                <article>
+                <?php $categorias = $mysqli->query("select distinct categoria as categoria from menu"); ?>
+
+                <?php while($row = $categorias->fetch_assoc()): ?>
+                    <p><?= $row['categoria'] ?></p>
+                <?php endwhile; ?>
+
+                <!--<article>
                     <p class="categoria">De comer</p>
                     <div class="platillo">
                         <p class="nombre">Sed sagittis nisl dictum</p>
@@ -55,7 +61,7 @@
                         <p class="precio">$35</p>
                         <p class="descripcion">Praesent gravida, augue sit amet dignnisim rutrum, enim tellus suscipit risus.</p>
                     </div>
-                </article>
+                </article>-->
             </div>
         </div>
     </div>
