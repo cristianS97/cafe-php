@@ -6,7 +6,9 @@
                 <?php $categorias = $mysqli->query("select distinct categoria as categoria from menu"); ?>
 
                 <?php while($row = $categorias->fetch_assoc()): ?>
-                    <p><?= $row['categoria'] ?></p>
+                    <article>
+                        <p class="categoria"><?= $row['categoria'] ?></p>
+                    </article>
                 <?php endwhile; ?>
 
                 <!--<article>
