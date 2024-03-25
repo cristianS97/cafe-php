@@ -8,6 +8,14 @@
                 <?php while($row = $categorias->fetch_assoc()): ?>
                     <article>
                         <p class="categoria"><?= $row['categoria'] ?></p>
+                        <?php $platillos = $mysqli->query("select * from menu where categoria = '" . $row['categoria'] . "'"); ?>
+                        <?php while($platillo = $platillos->fetch_assoc()): ?>
+                            <div class="platillo">
+                                <p class="nombre"><?= $platillo["platillo"] ?></p>
+                                <p class="precio">$<?= $platillo["precio"] ?></p>
+                                <p class="descripcion"><?= $platillo["descripcion"] ?></p>
+                            </div>
+                        <?php endwhile ?>
                     </article>
                 <?php endwhile; ?>
 
