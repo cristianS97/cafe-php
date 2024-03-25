@@ -12,4 +12,17 @@
     while($fila = $resultado->fetch_assoc()) {
         echo $fila["titulo"];
     }
+
+    echo "<br><hr><br>";
+
+    $categorias = $mysqli->query("select distinct categoria as categoria from menu");
+
+    while($row = $categorias->fetch_assoc()):
+        echo "<h2>Categoría: " . $row['categoria'] . "</h2><br>";
+
+        $platillos = $mysqli->query("select * from menu where categoria = '" . $row['categoria'] . "'");
+        while($platillo = $platillos->fetch_assoc()):
+            echo "<p>" . $platillo['platillo'] . "</p>";
+        endwhile;
+    endwhile;
 ?>
