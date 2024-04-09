@@ -10,10 +10,11 @@
 <header>
     <div class="contenedor">
         <nav class="menu">
-            <a href="#"id="btnAcercaDe">Acerca de</a>
-            <a href="#"id="btnMenu">Menu</a>
-            <a href="#"id="btnGaleria">Galeria</a>
-            <a href="#"id="btnUbicacion">Ubicacion</a>
+            <a href="#" id="btnAcercaDe">Acerca de</a>
+            <a href="#" id="btnMenu">Menu</a>
+            <a href="#" id="btnGaleria">Galeria</a>
+            <a href="#" id="btnUbicacion">Ubicacion</a>
+            <a href="./crearPlatillo.php" id="btnCrearPlatillo">Crear platillo</a>
         </nav>
 
         <div class="textos">
